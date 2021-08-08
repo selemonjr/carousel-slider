@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38437135aa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="navbar">
+      <nav>
+        <div class="logo flex-center">
+          <h1>𝐁𝐔𝐑𝐆𝐄𝐑 & 𝐒𝐀𝐔𝐂𝐄</h1>
+        </div>
+        <div class="navlinks flex-center" id="navLinks">
+          <i class="far fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">𝐇𝐎𝐌𝐄</a></li>
+            <li><a href="">𝐎𝐔𝐑 𝐅𝐎𝐎𝐃</a></li>
+            <li><a href="">𝐌𝐄𝐍𝐔</a></li>
+            <li><a href="">𝐋𝐈𝐌𝐈𝐓𝐄𝐃 𝐑𝐀𝐍𝐆𝐄</a></li>
+            <li><a href="">𝐆𝐀𝐋𝐋𝐄𝐑𝐘</a></li>
+            <li><a href="">𝐋𝐎𝐂𝐀𝐓𝐄𝐃</a></li>
+            <li><a href="">𝐃𝐄𝐋𝐈𝐕𝐄𝐑𝐘</a></li>
+            <li><a href="" class="icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="" class="icon"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" class="icon"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images-burger/burger-and-sauce-animal-fries-bn-3000px-475x475.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images-burger/burger-and-sauce-beef-burger-3000px2-1-475x475.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images-burger/burger-and-sauce-milkshakes-3000px-475x475.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+</body>
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function hideMenu() {
+    navLinks.style.right = "-300px";
+  }
+  function showMenu() {
+    navLinks.style.right = "0px";
+  }
+</script>
+</html>
